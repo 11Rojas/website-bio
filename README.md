@@ -7,7 +7,7 @@ Este proyecto es una aplicación web desarrollada con **Next.js 14.2.6** que uti
 - Node.js
 - Next.js 14.2.6
 - Cuenta de Discord
-- Token de un bot de Discord
+- Token de una cuenta de Discord
 
 ## Configuración
 
