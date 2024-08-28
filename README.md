@@ -48,8 +48,7 @@ Sigue los siguientes pasos para configurar el proyecto:
     { id: "1234396006485856317", role: "Member" },
     { id: "853723630218117120", role: "Member" },
     { id: "1150130162369843231", role: "Member" },
-
-  ];
+    ];
     ```
 
 5. **Inicia el servidor de desarrollo:**
