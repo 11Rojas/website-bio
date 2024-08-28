@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bios with Friends
 
-## Getting Started
+Este proyecto es una aplicación web desarrollada con **Next.js 14.2.6** que utiliza la API de Discord para crear y compartir bios con tus amigos.
 
-First, run the development server:
+## Requisitos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js
+- Next.js 14.2.6
+- Cuenta de Discord
+- Token de un bot de Discord
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Configuración
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Sigue los siguientes pasos para configurar el proyecto:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clona el repositorio:**
 
-## Learn More
+    ```bash
+    git clone asd
+    cd tu-repositorio
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Instala las dependencias:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. **Configura el token de la cuenta de Discord:**
 
-## Deploy on Vercel
+    Necesitarás una cuenta de discord y que este en el servidor con tus amigos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    Token_Account=tu-token-de-bot-aqui
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. **Agregar los ID de tus amigos:**
+
+    Edita el archivo `Users.ts` y añade los ID de Discord de tus amigos:
+
+    ```typescript
+   export const users = [
+    { id: "815397981880320010", role: "Administrator" },
+    { id: "797728978420891668", role: "Chocano"},
+    { id: "1085280364601294870", role: "Administrator" },
+    { id: "1075975022230900797", role: "Administrator" },
+    { id: "769740562219401287", role: "Member" },
+    { id: "1234396006485856317", role: "Member" },
+    { id: "853723630218117120", role: "Member" },
+    { id: "1150130162369843231", role: "Member" },
+
+  ];
+    ```
+
+5. **Inicia el servidor de desarrollo:**
+
+    ```bash
+    npm run dev
+    ```
+
+    El proyecto estará disponible en `http://localhost:3000`.
+
+## Uso
+
+Una vez que todo esté configurado, podrás acceder a la aplicación, crear bios y compartirlas con tus amigos a través de Discord.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, siéntete libre de abrir un issue o enviar un pull request.
+
+## Licencia
+
+Este proyecto está bajo la licencia [MIT](LICENSE).
